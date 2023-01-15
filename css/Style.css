@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css?family=Acme|Lobster|Patua+One|Rubik|Sniglet");
+* {
+  box-sizing: border-box;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+:root {
+  --Sniglet-font: "Sniglet", cursive;
+  --Rubik: "Rubik", cursive;
+  --Patua: "Patua One", cursive;
+  --Lobster: "lobster", cursive;
+  --light-black: #2e2c2caf;
+  --bggradient: linear-gradient(to bottom, #dd2476, #ff512f);
+  --light-gray: rgba(255, 255, 255, 0.877);
+}
+.navbar {
+  background: #dd2476;
+}
+
+.navbar-toggler {
+    border: 1px solid #fff;
+}
+.navbar-toggler:focus {
+    box-shadow: none;
+} 
+
+
+.navbar .nav-link {
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.landing {
+  background: var(--bggradient);
+}
+
+.landing .container .col-md-7 {
+  font-family: "Rubik", sans-serif;
+}
+
+.landing .container .col-md-7 h6 {
+  letter-spacing: 4px;
+}
+
+.landing .container .col-md-7 h1 {
+  font-size: 2.5rem;
+}
+
+
+/********** section 1 **************/
+
+.about .row .pray img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 0.5rem;
+}
+
+.about .row .col-md-6:last-child {
+  position: relative;
+}
+
+.about .panel {
+    position: absolute;
+    top: 3rem;
+    left: -6.5rem;
+    background: white;
+    border-radius: 3px;
+    text-align: left;
+    box-shadow: 0px 25px 42px rgba(0, 0, 0, 0.2);
+    font-family: var(--Rubik);
+    padding: 4rem;
+    z-index: 1;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .about .row .panel {
+    position: initial;
+    width: initial;
+    height: initial;
+  }
+}
+
+
+/*  Section 2  */
+
+.cover {
+  width: 100%;
+  height: 20rem;
+  background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("/imgs/pexels-photo-452738.jpeg");
+  background-position: -24rem -19rem;
+  background-size: 150%;
+  position: relative;
+}
+
+.cover .content {
+    padding:1rem ;
+    height: 100%;  
+}
+
+.cover .content > h1 {
+  font-family: var(--Patua);
+  font-size: 2.2rem;
+  color: whitesmoke;
+}
+
+.cover .content > p {
+  font-family: var(--Rubik);
+  font-size: .8rem;
+  color: #e5e5e5;
+}
+
+.numbers .rect {
+  position: relative;
+  z-index: 1;
+  background: white;
+  width: 17rem;
+  height: 12rem;
+  padding-top: 1.5rem;
+  margin: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 1px 1px 20px 0px rgba(255, 0, 0, 0.349);
+  cursor: pointer;
+  transition: .3s;
+}
+.numbers .rect:hover {
+    translate: 0 10px ;
+}
+
+.numbers {
+  margin-top: -4.5rem;
+}
+
+.numbers .rect h1 {
+  font-size: 5rem;
+  color: tomato;
+}
+
+.numbers .rect > p {
+  font-family: var(--Patua);
+}
+/* cards */
+
+.purchase > h1 {
+  font-family: var(--Lobster);
+}
+
+.purchase .cards .card {
+  width: 350px;
+  margin: 1rem;
+  transition: .3s;
+  box-shadow: 0 0 8px #333;
+  border-radius: 1rem;
+}
+
+.cards .card:hover {
+    scale: .95;
+}
+
+.cards div {
+  padding: 0;
+  margin: 0;
+}
+
+.cards .title {
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  background-color: #fff;
+  color: var(--light-black);
+}
+
+.card .card-text {
+  padding: 2.5rem 3rem;
+}
+
+.card-body .pricing > h1 {
+  font-size: 4rem;
+  padding: 1em 0.5em;
+}
+
+/* Section 3 */
+
+.section-3 {
+  height: 25rem;
+  background: var(--bggradient);
+}
+
+.desktop , .mobile {
+    width: 240px;
+}
+
+/* Section Team */
+
+.section-4 .team {
+  padding: 3rem 1rem;
+}
+
+.section-4 .card {
+  width: 350px;
+}
+
+.border-radius {
+  border-radius: 340px;
+  width: 60%;
+}
+
+/* footer */
+
+footer {
+  background: rgba(0, 0, 0, 0.815);
+  overflow-x: hidden;
+  padding: 5rem 4rem;
+}
+
+footer p > span {
+  color: #ff512f;
+}
+
+footer input {
+  border: none !important;
+}
+
+footer input::placeholder {
+  color: white !important;
+}
+footer input:focus {
+  box-shadow: none !important;
+}
+
+footer .input-group .input-group-text {
+  background: var(--bggradient);
+  border: none;
+  cursor: pointer;
+}
+footer .input-group .input-group-text i {
+  animation: arrow 1s linear infinite;
+}
+@keyframes arrow {
+  0%,100% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+}
+
+footer .column i {
+  color: #dd2476;
+  cursor: pointer;
+  padding: 0 .5rem;
+  transition: .3s;
+}
+footer .column i:hover {
+  scale: 2.1;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.815);
+  z-index: 9999;
+  transition: all 1.5s ease-in-out;
+}
