@@ -90,7 +90,7 @@ section {
 .cover {
   width: 100%;
   height: 20rem;
-  background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("/imgs/pexels-photo-452738.jpeg");
+  background: linear-gradient(rgb(0,0,0,0.7),rgb(0,0,0,0.7)),url("/imgs/cover.jpeg");
   background-position: -24rem -19rem;
   background-size: 150%;
   position: relative;
